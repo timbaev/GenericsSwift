@@ -21,8 +21,11 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var contentScrollView: UIScrollView!
     
+    var repository: Repository!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        repository = UserRepository()
         
         prepareNotifications()
         self.hideKeyboardWhenTappedAround()
@@ -89,7 +92,7 @@ class RegistrationViewController: UIViewController {
         }
         
         let userVK = UserVK(name: name, surname: surname, email: email, phoneNumber: phoneNumber, age: age, city: city, password: password)
-        UserRepository.instance.register(userVK)
+        repository.syncSave(with: userVK)
         
         navigationController?.popViewController(animated: true)
     }

@@ -8,23 +8,15 @@
 
 import Foundation
 
-class UserRepository {
-    
-    static let instance = UserRepository()
-    
-    private var users = [
-        UserVK(name: "Тимур", surname: "Шафигуллин", email: "iOSDeveloper@icloud.com", phoneNumber: "+79172513599", age: 19, city: "Казань", password: "qwe")
-    ]
-    
-    func register(_ user: UserVK) {
-        users.append(user)
-    }
+class UserRepository: RepositoryManager {
     
     func check(with email: String, and password: String) -> Bool {
+        let users: [UserVK] = syncGetAll()
         return users.contains(where: { $0.email == email && $0.password == password })
     }
     
     func search(with email: String) -> UserVK? {
+        let users: [UserVK] = syncGetAll()
         return users.first(where: { $0.email == email })
     }
     

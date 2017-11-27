@@ -8,11 +8,12 @@
 
 import Foundation
 
+
 class RepositoryManager: Repository {
     
     func syncSave<T>(with object: T) where T : Storable {
         object.id = Int(arc4random())
-        let objectName = genericName(from: T.self)
+        let objectName = NSStringFromClass(T.self)
         if var objects: [T] = getData(key: objectName) {
             objects.append(object)
             saveData(array: objects, key: objectName)
@@ -30,7 +31,7 @@ class RepositoryManager: Repository {
     }
     
     func syncGetAll<T>() -> [T] where T : Storable {
-        let objectName = genericName(from: T.self)
+        let objectName = NSStringFromClass(T.self)
         return getData(key: objectName) ?? [T]()
     }
     
@@ -42,7 +43,7 @@ class RepositoryManager: Repository {
     }
     
     func syncSearch<T>(id: Int, type: T.Type) -> T? where T : Storable {
-        let objectName = genericName(from: type)
+        let objectName = NSStringFromClass(type)
         let objects = getData(key: objectName) ?? [T]()
         if objects.isEmpty {
             return nil
@@ -55,15 +56,6 @@ class RepositoryManager: Repository {
             guard let strongSelf = self else { return }
             completionBlock(strongSelf.syncSearch(id: id, type: type))
         }
-    }
-    
-    private func genericName<T: Storable>(from type: T.Type) -> String {
-        let fullName = NSStringFromClass(type)
-        let range = fullName.range(of: ".")
-        if let range = range {
-            return String(fullName[range])
-        }
-        return fullName
     }
     
     private func saveData<T: Storable>(array: [T], key: String) {
