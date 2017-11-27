@@ -46,16 +46,4 @@ class News: NSObject, Storable {
         coder.encode(respostCount, forKey: #keyPath(News.respostCount))
     }
     
-    static func archive(_ news: [News]) -> Data {
-        let archivedNews = NSKeyedArchiver.archivedData(withRootObject: news as NSArray)
-        return archivedNews
-    }
-    
-    static func unarchive(with data: Data) -> [News]? {
-        if let unarchivedNews = NSKeyedUnarchiver.unarchiveObject(with: data) as? [News] {
-            return unarchivedNews
-        }
-        return nil
-    }
-    
 }

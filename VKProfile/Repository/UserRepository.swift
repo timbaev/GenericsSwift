@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UserRepository: RepositoryManager {
+class UserRepository: BaseRepository {
     
     func check(with email: String, and password: String) -> Bool {
         let users: [UserVK] = syncGetAll()

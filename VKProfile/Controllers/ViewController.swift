@@ -69,7 +69,7 @@ class ViewController: UITableViewController, CreateNewsDelegate, UICollectionVie
     override func viewDidLoad() {
         super.viewDidLoad()
         user = generateUser()
-        repository = RepositoryManager()
+        repository = BaseRepository()
         
         infoButtonsCollectionView.delegate = self
         prepareCollectionViews()

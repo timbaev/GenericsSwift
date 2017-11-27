@@ -15,7 +15,6 @@
 		CB42F4D71F7304ED00871971 /* ColorRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42F4D61F7304ED00871971 /* ColorRGB.swift */; };
 		CB42F4D91F730BA000871971 /* EndingWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42F4D81F730BA000871971 /* EndingWord.swift */; };
 		CB5723731FA24A11009747E1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5723721FA24A11009747E1 /* Repository.swift */; };
-		CB5723751FA24E3C009747E1 /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5723741FA24E3C009747E1 /* NewsRepository.swift */; };
 		CB5A0B441FA7587B009373D6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A0B431FA7587B009373D6 /* WelcomeViewController.swift */; };
 		CB5A0B461FA75AD7009373D6 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A0B451FA75AD7009373D6 /* WelcomePageViewController.swift */; };
 		CB5A0B481FA767A8009373D6 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A0B471FA767A8009373D6 /* RegistrationViewController.swift */; };
@@ -29,7 +28,7 @@
 		CB5A1A7B1F66D55500C1971E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5A1A791F66D55500C1971E /* Main.storyboard */; };
 		CB5A1A7D1F66D55500C1971E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5A1A7C1F66D55500C1971E /* Assets.xcassets */; };
 		CB5A1A801F66D55500C1971E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5A1A7E1F66D55500C1971E /* LaunchScreen.storyboard */; };
-		CB6C99AB1FCC56BE00EE25C9 /* RepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C99AA1FCC56BE00EE25C9 /* RepositoryManager.swift */; };
+		CB6C99AB1FCC56BE00EE25C9 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C99AA1FCC56BE00EE25C9 /* BaseRepository.swift */; };
 		CB6C99AD1FCC865900EE25C9 /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C99AC1FCC865900EE25C9 /* Storable.swift */; };
 		CB7061DD1F76C7F4008A14A8 /* PresentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7061DB1F76C7F4008A14A8 /* PresentTableViewCell.swift */; };
 		CB7061DE1F76C7F4008A14A8 /* PresentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7061DC1F76C7F4008A14A8 /* PresentTableViewCell.xib */; };
@@ -87,7 +86,6 @@
 		CB42F4D61F7304ED00871971 /* ColorRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRGB.swift; sourceTree = "<group>"; };
 		CB42F4D81F730BA000871971 /* EndingWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndingWord.swift; sourceTree = "<group>"; };
 		CB5723721FA24A11009747E1 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		CB5723741FA24E3C009747E1 /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
 		CB5A0B431FA7587B009373D6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CB5A0B451FA75AD7009373D6 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		CB5A0B471FA767A8009373D6 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +101,7 @@
 		CB5A1A7C1F66D55500C1971E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5A1A7F1F66D55500C1971E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB5A1A811F66D55500C1971E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB6C99AA1FCC56BE00EE25C9 /* RepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryManager.swift; sourceTree = "<group>"; };
+		CB6C99AA1FCC56BE00EE25C9 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		CB6C99AC1FCC865900EE25C9 /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
 		CB7061DB1F76C7F4008A14A8 /* PresentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTableViewCell.swift; sourceTree = "<group>"; };
 		CB7061DC1F76C7F4008A14A8 /* PresentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentTableViewCell.xib; sourceTree = "<group>"; };
@@ -167,9 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				CB5723721FA24A11009747E1 /* Repository.swift */,
-				CB5723741FA24E3C009747E1 /* NewsRepository.swift */,
 				CB5A0B511FA7782C009373D6 /* UserRepository.swift */,
-				CB6C99AA1FCC56BE00EE25C9 /* RepositoryManager.swift */,
+				CB6C99AA1FCC56BE00EE25C9 /* BaseRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -412,7 +409,6 @@
 				CB7EFFA61F9E2ABE00E05FBD /* PresentCollectionViewCell.swift in Sources */,
 				59450B721FA34F9800F3DC32 /* DetailsNewsViewController.swift in Sources */,
 				CB7061DD1F76C7F4008A14A8 /* PresentTableViewCell.swift in Sources */,
-				CB5723751FA24E3C009747E1 /* NewsRepository.swift in Sources */,
 				CB5A0B461FA75AD7009373D6 /* WelcomePageViewController.swift in Sources */,
 				CB42F4D91F730BA000871971 /* EndingWord.swift in Sources */,
 				CB42F4D21F73035400871971 /* InfoTableViewController.swift in Sources */,
@@ -445,7 +441,7 @@
 				CB5A0B441FA7587B009373D6 /* WelcomeViewController.swift in Sources */,
 				CB9B22AF1F6EACEE0093AA92 /* UserInfoData.swift in Sources */,
 				CBD104471F752E2900A48BCD /* MainInfoTableViewCell.swift in Sources */,
-				CB6C99AB1FCC56BE00EE25C9 /* RepositoryManager.swift in Sources */,
+				CB6C99AB1FCC56BE00EE25C9 /* BaseRepository.swift in Sources */,
 				CB42F4D71F7304ED00871971 /* ColorRGB.swift in Sources */,
 				CB9B22AD1F6EA7B10093AA92 /* User.swift in Sources */,
 				CB5723731FA24A11009747E1 /* Repository.swift in Sources */,

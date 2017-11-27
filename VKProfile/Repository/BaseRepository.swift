@@ -9,7 +9,7 @@
 import Foundation
 
 
-class RepositoryManager: Repository {
+class BaseRepository: Repository {
     
     func syncSave<T>(with object: T) where T : Storable {
         object.id = Int(arc4random())

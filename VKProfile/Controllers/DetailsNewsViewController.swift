@@ -18,7 +18,7 @@ class DetailsNewsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        repository = RepositoryManager()
+        repository = BaseRepository()
         
         repository.asyncSearch(id: newsID, type: News.self) { [weak self] (resultNews) in
             guard let selfStrong = self else { return }
